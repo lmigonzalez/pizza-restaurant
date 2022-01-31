@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mea+Culpa&family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body {
+  width: 100%;
+  background-color: rgb(19, 18, 18);
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  animation: anim 2s;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: "Mea Culpa", cursive;
+  color: #2eb086;
+  margin-left: 2rem;
+  animation: anim 2s;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links a {
+  font-size: 1.3rem;
+  margin: 0 2rem;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  border-bottom: 3px solid #2eb086;
+}
+
+.hamburger-menu {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #2eb086;
+  justify-content:  center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  animation: anim 2s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-elements {
+  display: none;
+  animation: anim 2s;
+}
+
+.hamburger-elements a {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  animation: anim 2s;
+}
+
+.card-content {
+  background-color: rgb(19, 18, 18);
+  margin: 0 auto;
+  height: 50vh;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: anim 2s;
+}
+.card-content h3 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  font-weight: 500;
+}
+form {
+  width: 90%;
+}
+
+.form-row {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+form select,
+form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "roboto", sans-serif;
+  outline: none;
+  border: none;
+  border: 1px solid #2eb086;
+  font-weight: 300;
+}
+form input[type="text"],
+form input[type="number"],
+form input::placeholder,
+select {
+  color: rgb(19, 18, 18);
+}
+form input[type="submit"] {
+  color: #fff;
+  background: #2eb086;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+form input[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  /* background-color: #2eb086; */
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: anim 2s;
+}
+
+footer h2 {
+  font-size: 3rem;
+  font-family: "Mea Culpa", cursive;
+}
+
+.social i {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: ease-in-out 0.2s;
+}
+
+.social i:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes anim {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+@media (max-width: 1000px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .card-content{
+      width: 100%;
+      height: auto;
+      border: none;
+  }
+
+  form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-elements.menu-togle {
+    display: flex;
+  }
+
+  .hamburger-elements {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: ease-in-out 0.2s;
+  }
+
+  .hamburger-elements a:hover {
+    transform: scale(1.1);
+    color: #2eb086;
+  }
+
+  .hamburger-menu {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #2eb086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .hamburger-menu {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #2eb086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+  .social {
+    margin: 1.5rem 0;
+  }
+}

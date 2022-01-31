@@ -1,0 +1,779 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mea+Culpa&family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  background-color: rgb(19, 18, 18);
+  position: relative;
+  overflow-x: hidden;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: "Mea Culpa", cursive;
+  color: #2eb086;
+  margin-left: 2rem;
+  animation: anim 2s;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: anim 2s;
+}
+
+.menu-links a {
+  font-size: 1.3rem;
+  margin: 0 2rem;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  border-bottom: 3px solid #2eb086;
+}
+
+.hamburger-menu {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #2eb086;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  animation: anim 2s;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-elements {
+  display: none;
+}
+
+.hamburger-elements a {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  animation: anim 2s;
+}
+
+.top-section {
+  background-image: url(./img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  animation: anim 2s;
+}
+
+.main-contenct {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+
+.main-contenct h2 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  margin: 1rem 0;
+  color: #2eb086;
+}
+
+.main-contenct h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.main-contenct button {
+  font-size: 1rem;
+  background-color: transparent;
+  border-style: solid;
+  margin: 1rem 1rem 0 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.main-contenct button:first-child {
+  color: #2eb086;
+  border-color: #2eb086;
+}
+
+.main-contenct button:last-child {
+  border-style: none;
+  background-color: #2eb086;
+}
+
+.make-a-reservation {
+  width: 100%;
+  height: auto;
+  background-color: #2eb086;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+
+.make-a-reservation p {
+  font-size: 1.3rem;
+}
+
+.reservation-btn {
+  padding: 1rem;
+  border-style: none;
+  background-color: #000;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.reservation-btn:hover {
+  transform: scale(1.1);
+}
+
+.meal-inf p {
+  margin: 0.5rem 0;
+}
+
+.meal-inf p:last-child {
+  background-color: #2eb086;
+  padding: 0.3rem;
+  display: inline-block;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.menu-section h2 {
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+.meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meal img {
+  width: 10rem;
+  height: auto;
+  margin: 0 1rem 0 0;
+}
+
+.meal-header p {
+  margin: 1rem 0;
+}
+
+.today-special {
+  background-image: url(/img/ivan-torres-MQUqbmszGGM-unsplash\ copy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.special-header {
+  width: 30%;
+  background-color: #2eb086;
+  padding: 2rem;
+  position: absolute;
+  opacity: 93%;
+  top: 40%;
+  left: 5rem;
+}
+
+.special-header h2 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.special-header h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.special-header button {
+  padding: 0.5rem 1rem;
+  border-style: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-inf {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.contact-inf h2 {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.contact-inf p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.phone,
+.address,
+.email {
+  margin: 1rem;
+}
+
+.contact-inf a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.contact-inf i {
+  color: #2eb086;
+  font-size: 1.3rem;
+}
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form input {
+  font-size: 1.3rem;
+  background-color: rgb(19, 18, 18);
+  color: #fff;
+  width: 80%;
+  height: 2.3rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: solid 2px #2eb086;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.textarea {
+  background-color: rgb(19, 18, 18);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  border: solid 2px #2eb086;
+  width: 80%;
+  resize: none;
+  height: 5rem;
+  outline: none;
+}
+
+.submit {
+  text-align: center;
+  color: #fff;
+  background-color: #2eb086;
+  width: 20%;
+}
+
+footer {
+  background-color: #2eb086;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h2 {
+  font-size: 3rem;
+  font-family: "Mea Culpa", cursive;
+}
+
+.social i {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: ease-in-out 0.2s;
+}
+
+.social i:hover {
+  transform: scale(1.1);
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem 0;
+  }
+  
+
+  .top-section {
+    position: relative;
+  }
+  .main-contenct {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+  }
+  .make-a-reservation {
+    display: flex;
+    padding: 2rem 1rem;
+  }
+  .make-a-reservation p {
+    font-size: 1rem;
+  }
+  .reservation-btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-gap: 2rem;
+    margin: 2rem 1rem;
+  }
+  .today-special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    text-align: center;
+  }
+  .special-header {
+    position: static;
+    width: 40%;
+    padding: 1rem;
+  }
+  .special-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .contact-inf {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-inf p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .submit {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+
+    header {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+
+    .menu-links {
+        display: none;
+      }
+
+    .hamburger-menu {
+        display: flex;
+      }
+    
+      .hamburger-elements.menu-togle {
+        display: flex;
+      }
+    
+      .hamburger-elements {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: ease-in-out 0.2s;
+      }
+    
+      .hamburger-elements a:hover {
+        transform: scale(1.1);
+        color: #2eb086;
+      }
+
+
+ 
+
+  .hamburger-menu {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #2eb086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+
+
+
+  .top-section {
+    position: relative;
+  }
+  .main-contenct {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+  }
+  .make-a-reservation {
+    display: flex;
+    padding: 2rem 1rem;
+  }
+  .make-a-reservation p {
+    font-size: 1rem;
+  }
+  .reservation-btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-gap: 2rem;
+    margin: 2rem 1rem;
+  }
+  .today-special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .special-header {
+    position: static;
+    width: 90%;
+    padding: 1rem;
+  }
+  .special-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .contact-inf {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-inf p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .submit {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .hamburger-menu {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #2eb086;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 2;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .top-section {
+    position: relative;
+  }
+  .main-contenct {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+  .make-a-reservation {
+    display: flex;
+    padding: 2rem 1rem;
+  }
+  .make-a-reservation p {
+    font-size: 1rem;
+    margin: 0.25rem;
+  }
+  .reservation-btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-gap: 2rem;
+    margin: 2rem 1rem;
+  }
+  .today-special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .special-header {
+    position: static;
+    width: 90%;
+    padding: 1rem;
+  }
+  .special-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .contact-inf {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contact-inf p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .submit {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+  .social {
+    margin: 1.5rem 0;
+  }
+}

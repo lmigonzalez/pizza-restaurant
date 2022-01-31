@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booking.css" />
+    <script
+      src="https://kit.fontawesome.com/4ec41665c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Restaurant Pizza</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ristorante Pizzeria</h1>
+      <nav class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#contact">About</a>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="hamburger-elements" onclick="clouseTap()">
+        <a href="index.html">Home</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#contact">About</a>
+      </div>
+    </header>
+    <section>
+        <div class = "card-content">
+            <h3>Reservation</h3>
+            <form>
+                <div class = "form-row">
+                    <select name = "days">
+                        <option value = "day-select">Select Day</option>
+                        <option value = "sunday">Sunday</option>
+                        <option value = "monday">Monday</option>
+                        <option value = "tuesday">Tuesday</option>
+                        <option value = "wednesday">Wednesday</option>
+                        <option value = "thursday">Thursday</option>
+                        <option value = "friday">Friday</option>
+                        <option value = "saturday">Saturday</option>
+                    </select>
+
+                    <select name = "hours">
+                        <option value = "hour-select">Select Hour</option>
+                        <option value = "10">10: 00</option>
+                        <option value = "10">12: 00</option>
+                        <option value = "10">14: 00</option>
+                        <option value = "10">16: 00</option>
+                        <option value = "10">18: 00</option>
+                        <option value = "10">20: 00</option>
+                        <option value = "10">22: 00</option>
+                    </select>
+                </div>
+
+                <div class = "form-row">
+                    <input type = "text" placeholder="Full Name">
+                    <input type = "text" placeholder="Phone Number">
+                </div>
+
+                <div class = "form-row">
+                    <input type = "number" placeholder="How Many Persons?" min = "1">
+                    <input type = "submit" value = "BOOK TABLE">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+      <h2>Restaurant Pizzeria</h2>
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus"></i>
+      </div>
+      <p>Copyright 2022-restaurantpizza</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

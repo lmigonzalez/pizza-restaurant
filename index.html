@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/4ec41665c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Restaurant Pizza</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ristorante Pizzeria</h1>
+      <nav class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">About</a>
+        <a href="booking.html">Book Now</a>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="hamburger-elements" onclick="clouseTap()">
+        <a href="index.html">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">About</a>
+        <a href="booking.html">Book Now</a>
+      </div>
+    </header>
+
+    <section class="top-section">
+      <div class="main-contenct">
+        <h2>Ristorante Pizzeria</h2>
+        <h3>An Italian restaurant</h3>
+        <div>
+          <button onclick="window.location.href='#contact'">View Menu</button>
+          <button onclick="window.location.href='booking.html'">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="make-a-reservation" data-aos="fade-in">
+      <p>Don't wait, you are one step from the perfect pizza.</p>
+      <button
+        class="reservation-btn"
+        onclick="window.location.href='booking.html'">
+        MAKE A RESERVATION
+      </button>
+    </section>
+    <section class="menu-section" id="menu" data-aos="fade-in">
+      <h2>Our Specialty</h2>
+      <div class="menu">
+        <div class="meal">
+          <img src="./img/pexels-beqa-tefnadze-803290.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+        <div class="meal">
+          <img src="/img/pexels-bruno-cantuária-774487.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+        <div class="meal">
+          <img src="/img/pexels-engin-akyurt-2619970.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+        <div class="meal">
+          <img src="/img/pexels-pablo-macedo-845811.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+        <div class="meal">
+          <img src="/img/pizza-g35730e436_1920.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+        <div class="meal">
+          <img src="/img/pizza-g8816c1959_1920.jpg" alt="" />
+          <div class="meal-inf">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>$25</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="today-special" data-aos="fade-in">
+      <div class="special-header">
+        <h2>Today's Deal</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+
+        <button>View More</button>
+      </div>
+    </section>
+
+    <address class="contact" data-aos="fade-in">
+      <div class="contact-inf" id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, est!
+          Eveniet, molestiae similique minima nam optio quo consequuntur
+          laudantium quibusdam deleniti ullam.
+        </p>
+        <div class="inf">
+          <div class="phone">
+            <i class="fas fa-phone-square"></i>
+            <a href="#">+123456789</a>
+          </div>
+          <div class="address">
+            <i class="fas fa-map-marked-alt"></i>
+            <a href="#">Miami 33165, Florida</a>
+          </div>
+          <div class="email">
+            <i class="fas fa-envelope"></i>
+            <a href="#">restaurant@pizza.com</a>
+          </div>
+        </div>
+      </div>
+
+      <form action="">
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Write Your Message" class="textarea"></textarea>
+        <input type="submit" placeholder="Send Messange" class="submit" />
+      </form>
+    </address>
+    <footer data-aos="fade-in">
+      <h2>Restaurant Pizzeria</h2>
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus"></i>
+      </div>
+      <p>Copyright 2022-restaurantpizza</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="aos.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
